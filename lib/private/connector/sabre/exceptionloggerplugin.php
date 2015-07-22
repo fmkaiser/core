@@ -94,6 +94,7 @@ class ExceptionLoggerPlugin extends \Sabre\DAV\ServerPlugin {
 		}
 
 		$exception = [
+			'Exception' => $exceptionClass,
 			'Message' => $message,
 			'Code' => $ex->getCode(),
 			'Trace' => $ex->getTraceAsString(),
